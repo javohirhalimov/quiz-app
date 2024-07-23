@@ -1,8 +1,8 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback } from "react";
 
-import QUESTIONS from '../questions.js';
-import Question from './Question.jsx';
-import Summary from './Summary.jsx';
+import QUESTIONS from "../questions.js";
+import Question from "./Question.jsx";
+import Summary from "./Summary.jsx";
 
 export default function Quiz() {
   const [userAnswers, setUserAnswers] = useState([]);
@@ -25,7 +25,7 @@ export default function Quiz() {
   );
 
   if (quizIsComplete) {
-    return <Summary userAnswers={userAnswers} />
+    return <Summary userAnswers={userAnswers} />;
   }
 
   return (
